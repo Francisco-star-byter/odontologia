@@ -360,5 +360,27 @@
             <p>© 2026 Clínica Dental Francisco Herrera</p>
         </div>
     </footer>
+    
+       <script>
+    const form = document.querySelector(".formulario");
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const data = new FormData(form);
+
+        await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+        });
+
+        form.reset();
+        alert("✅ Enviado correctamente");
+    });
+    </script>
+    
 </body>
 </html>
