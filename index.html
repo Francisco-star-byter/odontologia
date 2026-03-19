@@ -76,9 +76,9 @@
             <a href="#contacto" class="cta-navbar" aria-label="pedir cita">Pedir cita</a>
         </nav>
     </header>
-
+<main>
     <section class="hero" id="inicio">
-        <main class="hero-content">
+        <div class="hero-content">
             <article class="hero-text">
                 <h1>
                     Cuidamos tu salud dental para que puedas sonreír con confianza todos los días
@@ -98,7 +98,7 @@
                 <img src="hero-img.avif" 
                     alt="Dentista profesional atendiendo paciente en nuestra clínica odontológica" width="600" height="600" title="imagen de el odontologo encargado" fetchpriority="high" decoding="async" loading="eager" style="aspect-ratio:1/1">
             </div>
-        </main>
+        </div>
     </section>
 
     <section class="servicios" id="servicios">
@@ -260,6 +260,34 @@
                 </article>
             </div>
         </section>
+        
+            <section class="form-section">
+                <form action="https://formspree.io/f/mvzwlrre" method="POST" class="formulario">
+
+                    <h3>Agenda tu cita en menos de un minuto</h3>
+                    <p class="form-sub">
+                        Te contactaremos lo antes posible
+                    </p>
+
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+
+            <input type="tel" name="telefono" placeholder="Tu número de WhatsApp" required>
+
+            <select name="servicios" required>
+                <option value="">¿Qué necesitas?</option>
+                <option>Odontología general</option>
+                <option>Ortodoncia</option>
+                <option>Blanqueamiento</option>
+                <option>Limpieza</option>
+                <option>Otro</option>
+            </select>
+
+            <textarea name="mensaje" placeholder="Cuéntanos un poco más (opcional)"></textarea>
+
+            <button type="submit">Agendar cita</button>
+        </form>
+    </section>
+        
     <section class="ubicacion" id="ubicacion">
         <div class="ubicacion-container">
             <div class="ubicacion-text">
@@ -288,7 +316,7 @@
 
         </div>
     </section>
-
+</main>
     <footer class="footer">
         <div class="footer-container">
 
